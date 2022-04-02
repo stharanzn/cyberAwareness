@@ -1,0 +1,176 @@
+.headerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 30px;
+}
+
+.headerNav .headerBg {
+  position: absolute;
+  margin-top: -10px;
+}
+
+.headerNav__hamburger {
+  margin-top: 18px;
+  margin-left: 5%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.headerNav__hamburger > span {
+  display: block;
+  background-color: red;
+  width: 26px;
+  height: 2px;
+}
+
+.headerNav__hamburger > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.headerNav__logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 5%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.headerNav__links {
+  position: relative;
+  color: #D5441C;
+  text-decoration: none;
+}
+
+.headerNav__links::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 2px;
+  height: 5px;
+  background: red;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.headerNav__links:hover {
+  color: green;
+}
+
+.headerNav__links:hover::before {
+  opacity: 1;
+}
+
+.headerNav .headerContainer {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80%;
+          flex: 1 1 80%;
+  overflow: hidden;
+}
+
+.headerNav .headerContainer .firstBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerNav .headerContainer .firstBlock__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+.headerNav .headerContainer .secondBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.headerNav .headerContainer .secondBlock__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+.cyberAwareness {
+  color: white;
+}
+
+.cyberAwareness__heading {
+  color: green;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.fixedScreen {
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 25px;
+}
+
+.fixedScreen .cyberImages {
+  background-size: cover;
+  mix-blend-mode: lighten;
+}
+
+.scrollLocks {
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.scrollLocks :not(:last-child) {
+  margin-right: 100px;
+}
+
+.grad {
+  background-image: -webkit-gradient(linear, left top, right top, from(#002651), to(#121313));
+  background-image: linear-gradient(to right, #002651, #121313);
+}
+/*# sourceMappingURL=styles.css.map */

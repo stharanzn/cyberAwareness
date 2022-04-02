@@ -1,0 +1,122 @@
+
+
+.headerNav{
+
+    display: flex;
+    flex: 1;
+    margin-bottom: 30px;    
+    
+    .headerBg{
+        position: absolute;
+        margin-top: -10px;
+    }
+
+    &__hamburger{
+        margin-top: 18px;
+        margin-left: 5%;
+        align-self: flex-start;
+        
+
+        >span{
+            display: block;
+            background-color: red;
+            width: 26px;
+            height: 2px;
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+        }
+
+    }
+
+    &__logo{
+        height: 50px;
+        width: 50px;
+        margin-right: 5%;
+        align-self: flex-end;
+    }
+
+    &__links{
+        position: relative;
+        color: #D5441C;
+        text-decoration: none;
+
+        &::before{
+            content: "";
+            position: absolute;
+            display:block;
+            border-radius: 2px;
+            height: 5px;
+            background: red;
+            opacity: 0;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            transition: opacity 200ms ease-in-out;
+            
+        }
+
+        &:hover{
+            color: green;
+            &::before{
+                opacity: 1;
+            }
+        }
+    }
+
+
+    .headerContainer{
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 80%;
+        overflow: hidden;
+        
+        
+
+        .firstBlock{
+            display: flex;
+            flex-wrap: wrap;
+    
+            justify-content: center;
+            
+            &__block{
+                display: flex;
+                flex-wrap: wrap;
+                
+                flex: 1;
+                justify-content: center;
+                width: 90%;
+            }
+        
+            
+        }
+    
+        .secondBlock{
+            display: flex;
+            flex-wrap: wrap;
+            
+            flex: 1;
+                    
+            &__block{
+                display: flex;
+                flex: 1;
+                flex-wrap: wrap;
+                
+                justify-content: center;
+                width: 90%;
+            }
+    
+            
+    
+    
+    
+        }
+
+    }
+
+    
+
+
+}
+
