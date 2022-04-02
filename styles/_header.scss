@@ -1,10 +1,11 @@
 
 
 .headerNav{
-
+    
     display: flex;
     flex: 1;
-    margin-bottom: 30px;    
+    font-family: headerFont;
+       
     
     .headerBg{
         position: absolute;
@@ -38,7 +39,7 @@
 
     &__links{
         position: relative;
-        color: #D5441C;
+        color: #36C186;
         text-decoration: none;
 
         &::before{
@@ -51,7 +52,7 @@
             opacity: 0;
             left: 0;
             right: 0;
-            bottom: -20px;
+            bottom: -10px;
             transition: opacity 200ms ease-in-out;
             
         }

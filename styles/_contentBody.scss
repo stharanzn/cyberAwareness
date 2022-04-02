@@ -1,33 +1,51 @@
-.cyberAwareness{
-    color: white;
 
-    &__heading{
-        color: green;
-        font-size: 25px;
-        padding: 20px;
-    }
 
+h1{
+    font-family: littleMonster;
 }
 
-.fixedScreen{
+p{
+    color: #F7F36B;
+    font-family: 'BIZ UDMincho', serif;
 
-    position: absolute;
-    text-align: center;
-    overflow: hidden;
-    display: flex;
-    bottom: 25px;
+}
     
 
-    .cyberImages{
-        
-        background-size: cover;
-        mix-blend-mode: lighten;
-        
-    }
-
+.styleTextPara{
+    font-family: 'BIZ UDMincho', serif;
+    font-style: italic;
+    word-spacing: 5px;
+    line-height: 1.6;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
+.cyberAwareness{
+    
+
+    &__heading{
+        
+        color: red;
+        display: flex;
+        letter-spacing: 10px;
+        font-style: italic;
+        font-size: 20px;
+        padding: 20px;
+
+        img{
+            margin-top: 35px;
+            position: absolute;
+            right: 20px;
+            height: 64px;
+            width: 80px;
+            
+        }
+
+    }
+
+    
+}
 
 .scrollLocks{
     height: 50px;
@@ -36,4 +54,34 @@
     :not(:last-child){
         margin-right: 100px;
     }
+}
+
+.secHeading{
+    color: #F7F36B;
+
+    &__heading{
+        right: 0;
+        color: red;
+        display: flex;
+        letter-spacing: 10px;
+        font-style: italic;
+        font-size: 20px;
+        padding: 20px;
+
+        h1{
+            color: red;
+            right: 20px;
+            position: absolute;
+        }
+
+        img{
+            margin-top: 35px;
+            position: relative;
+            left: 20px;
+            height: 64px;
+            width: 80px;
+            
+        }
+    }
+
 }

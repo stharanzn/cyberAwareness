@@ -5,7 +5,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-bottom: 30px;
+  font-family: headerFont;
 }
 
 .headerNav .headerBg {
@@ -41,7 +41,7 @@
 
 .headerNav__links {
   position: relative;
-  color: #D5441C;
+  color: #36C186;
   text-decoration: none;
 }
 
@@ -55,7 +55,7 @@
   opacity: 0;
   left: 0;
   right: 0;
-  bottom: -20px;
+  bottom: -10px;
   -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
@@ -135,29 +135,56 @@
   width: 90%;
 }
 
-.cyberAwareness {
-  color: white;
+@font-face {
+  font-family: headerFont;
+  src: url(/fonts/headerFont.ttf);
+}
+
+@font-face {
+  font-family: littleMonster;
+  src: url(/fonts/LittleMonster-YzLdo.otf);
+}
+
+@font-face {
+  font-family: monsterBike;
+  src: url(/fonts/monsterBike.ttf);
+}
+
+h1 {
+  font-family: littleMonster;
+}
+
+p {
+  color: #F7F36B;
+  font-family: 'BIZ UDMincho', serif;
+}
+
+.styleTextPara {
+  font-family: 'BIZ UDMincho', serif;
+  font-style: italic;
+  word-spacing: 5px;
+  line-height: 1.6;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .cyberAwareness__heading {
-  color: green;
-  font-size: 25px;
-  padding: 20px;
-}
-
-.fixedScreen {
-  position: absolute;
-  text-align: center;
-  overflow: hidden;
+  color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: 25px;
+  letter-spacing: 10px;
+  font-style: italic;
+  font-size: 20px;
+  padding: 20px;
 }
 
-.fixedScreen .cyberImages {
-  background-size: cover;
-  mix-blend-mode: lighten;
+.cyberAwareness__heading img {
+  margin-top: 35px;
+  position: absolute;
+  right: 20px;
+  height: 64px;
+  width: 80px;
 }
 
 .scrollLocks {
@@ -169,8 +196,47 @@
   margin-right: 100px;
 }
 
+.secHeading {
+  color: #F7F36B;
+}
+
+.secHeading__heading {
+  right: 0;
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 10px;
+  font-style: italic;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.secHeading__heading h1 {
+  color: red;
+  right: 20px;
+  position: absolute;
+}
+
+.secHeading__heading img {
+  margin-top: 35px;
+  position: relative;
+  left: 20px;
+  height: 64px;
+  width: 80px;
+}
+
 .grad {
   background-image: -webkit-gradient(linear, left top, right top, from(#002651), to(#121313));
   background-image: linear-gradient(to right, #002651, #121313);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fix {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  mix-blend-mode: lighten;
 }
 /*# sourceMappingURL=styles.css.map */
