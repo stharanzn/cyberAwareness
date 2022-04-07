@@ -1,4 +1,5 @@
 .grad {
+    background-color: white;
     background-image: linear-gradient(to right, #002651 , #121313);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,4 +10,9 @@
   bottom: 0;
   left: 0;
   mix-blend-mode: lighten;
+}
+
+html{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
