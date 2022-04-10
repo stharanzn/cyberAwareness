@@ -40,11 +40,12 @@
             <div class="firstBlock">
 
                 <div class="firstBlock__block">
-                    <ol><a class="headerNav__links" href="#">Phishing</a></ol>
-                    <ol><a class="headerNav__links" href="#">Malwares</a></ol>
-                    <ol><a class="headerNav__links" href="#">Man in the middle</a></ol>
-                    <ol><a class="headerNav__links" href="#">Dos Attacks</a></ol>
-                    <ol><a class="headerNav__links" href="#">SQL injection</a></ol>
+                    <ol><a class="headerNav__links" href="#">Home</a></ol>
+                    <ol><a class="headerNav__links" href="#">News</a></ol>
+                    <ol><a class="headerNav__links" href="#">Reference Sites</a></ol>
+                    <ol><a class="headerNav__links" href="#">About us</a></ol>
+                    <!-- <ol><a class="headerNav__links" href="#">Dos Attacks</a></ol>
+                    <ol><a class="headerNav__links" href="#">SQL injection</a></ol> -->
     
                 </div>            
     
@@ -53,11 +54,11 @@
             <div class="secondBlock">
     
                 <div class="secondBlock__block secondBlock__change">
-                    <ol><a class="headerNav__links" href="#">phishing2</a></ol>
-                    <ol><a class="headerNav__links" href="#">malwares2</a></ol>
-                    <ol><a class="headerNav__links" href="#">Man in the middle2</a></ol>
-                    <ol><a class="headerNav__links" href="#">Dos Attacks2</a></ol>
-                    <ol><a class="headerNav__links" href="#">SQL injection2</a></ol>
+                    <ol><a class="headerNav__links" href="#">phishing</a></ol>
+                    <ol><a class="headerNav__links" href="#">malwares</a></ol>
+                    <ol><a class="headerNav__links" href="#">MITM</a></ol>
+                    <ol><a class="headerNav__links" href="#">Dos Attacks</a></ol>
+                    <ol><a class="headerNav__links" href="#">SQL injection</a></ol>
     
                 </div>            
     
@@ -69,15 +70,17 @@
 
     </div>
 
-    <marquee class="scrollLocks" scrolldelay="10">
-        <img src="drawables/locked.png">
+    <div class="ipInfo" id="marque" scrolldelay="10">
+        <!-- <img src="drawables/locked.png">
         <img src="drawables/locked.png">
         <img src="drawables/locked.png">
         <img src="drawables/unlocked.png">
         <img src="drawables/locked.png">
-        <img src="drawables/locked.png">
+        <img src="drawables/locked.png"> -->
         
-    </marquee>
+        <!-- <p id="u_ip">192.168.0.1</p> -->
+        
+    </div>
     
 
     <div class="texts">
@@ -159,6 +162,16 @@
 
     <div class="footer">
 
+        <div class="footerBg">
+            
+            <img class="footerImg" src="drawables/curvedShit.svg" >
+            <!-- <svg width="100%" height="15%" viewBox="0 0 1920 500" fill="none" >
+                <path d="M0 181.877C55.5 769.38 1247 -436.621 1920 181.877V690.878H0V181.877Z" fill="#FFE2E2"/>
+            </svg> -->
+
+            
+        </div>
+
 
         <div class="footerTexts">
             <p class="beSafe">Be Cyber safe</p>
@@ -168,9 +181,9 @@
         <div class="socials">
 
             <div class="socialImages">
-                <img src="drawables/githubV.png" alt="">
-                <img src="drawables/twitterV.png" alt="">
-                <img src="drawables/instagramV.png" alt="">
+                <a href="#github"><img src="drawables/githubV.png"></a>
+                <a href="#twitter"><img src="drawables/twitterV.png" ></a>
+                <a href="#instagram"><img src="drawables/instagramV.png" ></a>
             </div>
             
             
@@ -184,21 +197,11 @@
             
 
 
-        </div>
-
-        <div class="footerBg">
-            
-            <img class="footerImg" src="drawables/curvedShit.svg" width="100%" height="5%">
-            <!-- <svg width="100%" height="15%" viewBox="0 0 1920 500" fill="none" >
-                <path d="M0 181.877C55.5 769.38 1247 -436.621 1920 181.877V690.878H0V181.877Z" fill="#FFE2E2"/>
-            </svg> -->
-
-            
-        </div>
-
-        
+        </div>        
 
     </div>
+
+    <script src="logics/script.js"></script>
 
 </body>
 </html>

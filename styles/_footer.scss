@@ -1,14 +1,7 @@
 .footer{
 
+    margin-top: 5%;
     position: relative;
-
-
-    // .footerImg{
-    //     height: 10%;
-    //     width: 100%;
-    // }
-
-
 
     .beSafe{
         color: black;
@@ -28,20 +21,27 @@
         top: 20%;        
 
         img{
+            border: 5px outset rgb(202, 192, 192);
+            padding: 5px;
             transform: rotate3d(1, 1, 1, -20deg);
             border-radius: 15%;
-            box-shadow: 10px 10px 4px grey;
+            box-shadow: 5px 5px 4px grey;
             margin-right: 20px;
-            width: 50px;
+            width: 30px;
             transition: all 300ms ;
+            
             
         
         }
         img:hover{
             transform: rotate3d(0, 0, 0, 0deg);
-            box-shadow: 5px  5px 2px rgb(88, 87, 87);
-            
+            box-shadow: 15px  10px 10px rgb(88, 87, 87); 
+            cursor: pointer;
         }
+
+        
+
+        
         
     }
 
@@ -64,6 +64,13 @@
         margin-top: 20%;
 
     }        
+
+    .footerImg{
+    
+        width: 100%;
+        
+    }
     
 
 }
+

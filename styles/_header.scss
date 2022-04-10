@@ -79,7 +79,7 @@
         .firstBlock{
             display: flex;
             flex-wrap: wrap;
-    
+            order: 1;
             justify-content: center;
             
             &__block{
@@ -97,7 +97,7 @@
         .secondBlock{
             display: flex;
             flex-wrap: wrap;
-            
+            order:2;
             flex: 1;
                     
             &__block{
